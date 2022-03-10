@@ -1,0 +1,23 @@
+{
+  "id": "2c938084726e18d60172720000000000",
+  "back_url": "https://www.mercadopago.com.ar",
+  "collector_id": 100200300,
+  "application_id": 1234567812345678,
+  "reason": "Plan Pase Mensual Gold",
+  "status": "active",
+  "date_created": "2020-06-01T20:14:35.008-04:00",
+  "last_modified": "2020-06-01T20:14:35.008-04:00",
+  "init_point": "https://www.mercadopago.com/mlm/debits/new?preapproval_plan_id=2c938084726e18d60172720000000000",
+  "sandbox_init_point": "https://sandbox.mercadopago.com/mlm/debits/new?preapproval_plan_id=2c938084726e18d60172720000000000",
+  "auto_recurring": {
+    "frequency": 1,
+    "frequency_type": "months",
+    "transaction_amount": 1100,
+    "currency_id": "ARS",
+    "repetitions": 12,
+    "free_trial": {
+      "frequency": 1,
+      "frequency_type": "months"
+    }
+  }
+}

@@ -1,0 +1,747 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+/*----------Sidenav Bar-------------*/
+
+.sidebar {
+  width: 9.375rem;
+  height: 100vh;
+  background: #eaeaea;
+  box-shadow: 2px 0px 3px 0px #ccc;
+  position: fixed;
+}
+
+#menu {
+  position: absolute;
+  visibility: hidden;
+}
+
+.sidebar ul {
+  margin-top: 1.875rem;
+  height: 100%;
+}
+
+.sidebar ul li {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar ul li i {
+  margin: 1.25rem;
+  font-size: 1.563rem;
+  cursor: pointer;
+  color: #5a5959 /*#7E57C2*/;
+}
+
+.sidebar li.active {
+  border-right: 2px solid #5a5959;
+}
+
+.sidebar li:hover {
+  color: #7e57c2;
+  border-right: 2px solid #7e57c2;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.sidebar li:hover i {
+  color: #7e57c2;
+
+  transition: 0.2s ease;
+}
+
+/*----------Cuerpo Principal-------------*/
+.main {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 9rem;
+}
+
+/**---------------INICIO--------------*/
+/*--Titulo--*/
+.title-user {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title-left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-right {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-right img {
+  width: 15rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.title-user p {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/*--Unirse----*/
+.cards-area {
+  width: 90%;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-area p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.btn-registro {
+  border-radius: 3rem;
+  width: 20%;
+  border: 1px solid #7e57c2;
+  line-height: 1.6rem;
+  font-size: 1.3rem;
+  background-color: #7e57c2;
+  color: #ffff;
+  padding: 0.5rem 0;
+  margin: 1.5rem 0;
+  transition: 0.3s ease-in-out all;
+  font-weight: 500;
+}
+
+.btn-registro:hover {
+  cursor: pointer;
+  background: #ffff;
+  color: #7e57c2;
+}
+
+.card {
+  width: 25%;
+  margin: 0rem 1.5rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  border: 0.065rem solid #000;
+  border-radius: 1rem;
+  box-shadow: 0.25rem 0.25rem 0.3rem 0rem #ccc;
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: rgb(54, 21, 85);
+  border: 0.065rem solid #fff;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.left {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-card {
+  font-weight: 700;
+}
+
+/*--Beneficios--*/
+.benefits {
+  width: 80%;
+  height: 16.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 0.065rem solid #000;
+  border-radius: 1rem;
+  box-shadow: 0.25rem 0.25rem 0.3rem 0rem #ccc;
+}
+
+.benefits:hover {
+  cursor: pointer;
+  background-color: rgb(54, 21, 85);
+  border: 0.065rem solid #fff;
+  color: #fff;
+  transition: 0.2s ease;
+}
+
+.benefits:hover h4 {
+  border-bottom: 0.125rem solid #fff;
+  transition: 0.2s ease;
+}
+.benefits:hover p {
+  border-bottom: 0.065rem solid #fff;
+  transition: 0.2s ease;
+}
+
+.column-shop {
+  height: 100%;
+  width: 30%;
+}
+
+.benefits p {
+  padding: 1rem;
+  height: 2rem;
+  border-bottom: 0.065rem solid #000;
+}
+
+.benefits h4 {
+  padding: 0rem 1rem;
+  border-bottom: 0.125rem solid #000;
+}
+
+.column-discount {
+  width: 35%;
+  text-align: center;
+}
+
+.column-location {
+  width: 35%;
+}
+
+/**--------------Usuario---------------*/
+
+.leftUsuario {
+  height: 25rem;
+  width: 90%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.065rem solid #eaeaea;
+  border-radius: 1rem;
+  box-shadow: 0.125rem 0.25rem 0.25rem 0rem #ccc;
+}
+
+.formulario-datos {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.datos-usuario {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.usuario-izquierda {
+  width: 50%;
+}
+
+.usuario-derecha {
+  width: 50%;
+}
+
+.rightUsuario {
+  width: 90%;
+  height: 32rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.065rem solid #eaeaea;
+  border-radius: 1rem;
+  box-shadow: 0.125rem 0.25rem 0.25rem 0rem #ccc;
+}
+
+.datos-plan {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.plan-izquierda {
+  width: 50%;
+}
+
+.plan-derecha {
+  width: 50%;
+}
+
+#id_usuario {
+  position: absolute;
+  visibility: hidden;
+  margin-left: -100rem;
+}
+
+.input-group {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.input-fill {
+  margin-top: 2.5rem;
+}
+
+.input-fill input {
+  border: none;
+  border-bottom: 3px solid #bdbbbb;
+  width: 100%;
+  height: 2rem;
+  font-size: 15px;
+  line-height: 147.6%;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.input-fill input:focus {
+  outline: none;
+  border-color: #7e57c2;
+}
+
+.input-fill input:hover {
+  background-color: #eaeaea;
+}
+
+.input-fill input:focus + .input-label,
+.input-fill input:not(:placeholder-shown) + .input-label {
+  top: 0;
+  margin-bottom: 2rem;
+  color: #7e57c2;
+}
+
+.input-fill .input-label {
+  top: 20px;
+  left: 10px;
+  line-height: 147.6%;
+  color: #bdbbbb;
+  transition: top 0.2s;
+  font-weight: 700;
+}
+
+.btn-registro {
+  border-radius: 3rem;
+  width: 25%;
+  border: 1px solid #7e57c2;
+  line-height: 1.6rem;
+  font-size: 1.3rem;
+  background-color: #7e57c2;
+  color: #ffff;
+  padding: 0.5rem 0;
+  transition: 0.3s ease-in-out all;
+  font-weight: 500;
+}
+
+.btn-registro:hover {
+  cursor: pointer;
+  background: #ffff;
+  color: #7e57c2;
+}
+
+/**--------------PLANES-------------*/
+.arribaPlanes {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.arribaPlanes-imagen {
+  width: 30%;
+  text-align: center;
+}
+
+.arribaPlanes-imagen img {
+  width: 15rem;
+}
+
+h2 {
+  font-weight: 300;
+  text-align: center;
+}
+
+.informacionBajaDePlanes {
+  width: 90%;
+  padding: 1.5rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abajoPlanes {
+  width: 90%;
+  height: 100%;
+  padding: 0rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.abajoPlanes .row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.abajoPlanes .col-md-3 {
+  width: 23%;
+  margin-right: 1rem;
+  height: 100%;
+}
+
+.abajoPlanes .single-price {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #eaeaea;
+  box-shadow: 0.065rem 0.125rem 0.5rem 0rem #ccc;
+  border-radius: 1rem;
+  transition: 0.5s;
+}
+.abajoPlanes .single-price:hover {
+  box-shadow: 0 2px 20px #333;
+}
+.abajoPlanes .price-head {
+  background-color: #2196f3;
+  display: inline;
+  float: left;
+  padding: 0.065rem 0px;
+  text-align: center;
+  width: 100%;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+.abajoPlanes .price-head h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  margin-top: 0.065rem;
+}
+.abajoPlanes .price-head p {
+  font-size: 25px;
+  color: #ccc;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.abajoPlanes .price-content {
+  display: inline;
+  float: left;
+  width: 100%;
+  padding: 0 0.1rem;
+}
+.price-content ul li {
+  border-bottom: 1px solid #cacaca;
+  padding: 0.55rem 10px;
+  list-style: none;
+}
+
+ul li:last-child {
+  border: none;
+}
+
+.fa-check-circle {
+  color: green;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.fa-times-circle {
+  color: red;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.abajoPlanes .price-button {
+  padding: 1.5rem 0.5rem;
+  width: 90%;
+}
+
+.abajoPlanes .buy-btn {
+  height: 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  font-size: 18px;
+  transition: 0.5s;
+  background-color: #2196f3;
+}
+.buy-btn:hover {
+  border-color: 1px solid #fff;
+  background-color: #3f51b5;
+}
+.abajoPlanes .price-button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/**--------------CONTACTO-------------*/
+.contactoUsuario {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.imgContacto {
+  width: 10rem;
+}
+
+.contactoUsuario .columnaIzquierda {
+  width: 50%;
+}
+
+.contactoUsuario .columnaDerecha {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.follow {
+  background: #eaeaea;
+  padding: 10px;
+  margin: 15px;
+}
+.columnaIzquierda .fa {
+  margin: 10px;
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*-----------RESPONSIVO--------------*/
+@media screen and (max-width: 1020px) {
+  /**Inicio*/
+  .benefits p {
+    height: 1.5rem;
+  }
+
+  /**Usuario*/
+}
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 780px) {
+  /**Inicio*/
+  .sidebar {
+    width: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar li p {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .sidebar i {
+    visibility: visible;
+  }
+
+  .main {
+    width: 100%;
+    margin-left: 4.5rem;
+  }
+
+  .card {
+    margin: 0rem 0.5rem;
+    padding: 0.125rem;
+  }
+
+  /**Planes*/
+  .abajoPlanes .row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .abajoPlanes .row .col-md-3 {
+    width: 80%;
+  }
+
+  /**Contacto*/
+  .contactoUsuario {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactoUsuario .columnaIzquierda {
+    width: 85%;
+  }
+
+  .contactoUsuario .columnaDerecha {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  /**Inicio*/
+  .sidebar {
+    height: 70rem;
+  }
+
+  .cards-area button {
+    width: 70%;
+  }
+
+  .cards-area p {
+    font-size: 1.2rem;
+  }
+
+  .benefits {
+    height: 18rem;
+  }
+
+  .benefits p {
+    height: 2.5rem;
+  }
+
+  /**Usuario*/
+}
+
+@media screen and (max-width: 580px) {
+  /**Inicio*/
+  .title-user {
+    flex-direction: column;
+  }
+
+  .title-left {
+    width: 90%;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .title-user p {
+    margin-top: 0.95rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  .title-right img {
+    width: 15rem;
+    margin-top: 3.5rem;
+  }
+
+  /**Planes*/
+  .arribaPlanes .arribaPlanes-imagen img {
+    width: 8rem;
+  }
+
+  .abajoPlanes {
+    width: 100%;
+    padding: 1rem 0rem;
+  }
+
+  .abajoPlanes .row {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .abajoPlanes .row .col-md-3 {
+    width: 100%;
+    padding: 0rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  /**Inicio*/
+  .benefits {
+    height: 27rem;
+  }
+
+  .benefits p {
+    height: 4.5rem;
+  }
+
+  /**Usuario*/
+  .leftUsuario #login {
+    width: 70%;
+  }
+
+  /**Contacto*/
+
+  .contactoUsuario .columnaIzquierda {
+    width: 100%;
+  }
+
+  .contactoUsuario .columnaDerecha {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /**Usuario*/
+  .leftUsuario {
+    height: auto;
+  }
+  .rightUsuario {
+    height: auto;
+  }
+
+  .datos-usuario {
+    flex-direction: column;
+  }
+
+  .datos-usuario .usuario-izquierda {
+    width: 90%;
+  }
+
+  .datos-usuario .usuario-derecha {
+    width: 90%;
+  }
+
+  .datos-plan {
+    flex-direction: column;
+  }
+
+  .datos-plan .plan-izquierda {
+    width: 90%;
+  }
+
+  .datos-plan .plan-derecha {
+    width: 90%;
+  }
+}
