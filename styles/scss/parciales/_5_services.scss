@@ -1,0 +1,53 @@
+@import "0_colores";
+.servicios {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  background: $blanco;
+  h2 {
+    text-align: center;
+    align-self: center;
+    font-size: 2.7rem;
+    font-weight: 400;
+    color: $negro;
+  }
+  &__fila {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    &__tarjetaServicio {
+      width: 15rem;
+      margin: 1.5rem 0.35rem;
+      padding: 0.65rem;
+      border: 0.1rem solid $primario;
+      border-radius: 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0.5rem 0.5rem 0.5rem 0rem $negro;
+      i {
+        font-size: 1.5rem;
+      }
+      h3 {
+        text-align: center;
+      }
+    }
+    &__tarjetaServicio:hover {
+      background: $primario;
+      transition: 0.3s all ease;
+      i {
+        color: $blanco;
+        transition: 0.3s all ease;
+      }
+      h3 {
+        color: $blanco;
+        transition: 0.3s all ease;
+      }
+      p {
+        color: $blanco;
+        transition: 0.3s all ease;
+      }
+    }
+  }
+}
