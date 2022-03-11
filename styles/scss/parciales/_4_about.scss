@@ -1,0 +1,192 @@
+@import "0_colores";
+.sobreNosotros {
+  width: 100%;
+  height: auto;
+  margin-top: 1.5rem;
+  background-color: $negro;
+  &__fila {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    &__columnaIzquierda {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        margin: 1rem 0rem;
+        font-size: 2.7rem;
+        font-weight: 400;
+        color: $blanco;
+      }
+      p {
+        margin: 1rem;
+        font-size: 1rem;
+        font-weight: 300;
+        color: $blanco;
+      }
+    }
+    &__columnaDerecha {
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 30%;
+        margin: 1.5rem;
+      }
+      .cuadrado {
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 0.065rem solid $blanco;
+        position: absolute;
+      }
+      .cuadrado1 {
+        top: 10%;
+        left: 15%;
+        animation-name: cuadradoAnimado1;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 4s;
+        animation-delay: 0s;
+      }
+      .cuadrado2 {
+        bottom: 13%;
+        left: 20%;
+        animation-name: cuadradoAnimado2;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 4.5s;
+        animation-delay: 0s;
+      }
+      .cuadrado3 {
+        right: 15%;
+        top: 40%;
+        animation-name: cuadradoAnimado3;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 6.5s;
+        animation-delay: 0s;
+      }
+    }
+  }
+}
+
+/*Responsive*/
+@media screen and (min-width: 768px) {
+  .sobreNosotros {
+    &__fila {
+      flex-direction: row;
+      &__columnaIzquierda {
+        width: 50%;
+        justify-content: center;
+        p {
+          margin: 2rem;
+          font-size: 1.3rem;
+        }
+      }
+      &__columnaDerecha {
+        width: 50%;
+      }
+    }
+  }
+}
+
+/**ANIMACIONES*/
+@keyframes cuadradoAnimado1 {
+  //Inicio 10 15
+  0% {
+    top: 10%;
+    left: 15%;
+    transform: rotate(0deg);
+  }
+
+  25% {
+    top: 12%;
+    left: 13%;
+    transform: rotate(90deg);
+  }
+
+  50% {
+    top: 14%;
+    left: 15%;
+    transform: rotate(180deg);
+  }
+
+  75% {
+    top: 12%;
+    left: 17%;
+    transform: rotate(270deg);
+  }
+
+  100% {
+    top: 10%;
+    left: 15%;
+    transform: rotate(360deg);
+  }
+}
+@keyframes cuadradoAnimado2 {
+  //Inicio 13 20
+  0% {
+    bottom: 13%;
+    left: 20%;
+    transform: rotate(0deg);
+  }
+
+  25% {
+    bottom: 15%;
+    left: 22%;
+    transform: rotate(90deg);
+  }
+
+  50% {
+    bottom: 13%;
+    left: 24%;
+    transform: rotate(180deg);
+  }
+
+  75% {
+    bottom: 11%;
+    left: 22%;
+    transform: rotate(270deg);
+  }
+
+  100% {
+    bottom: 13%;
+    left: 20%;
+    transform: rotate(360deg);
+  }
+}
+@keyframes cuadradoAnimado3 {
+  //Inicio 40 15
+  0% {
+    top: 40%;
+    right: 15%;
+    transform: rotate(0deg);
+  }
+
+  25% {
+    top: 44%;
+    right: 11%;
+    transform: rotate(90deg);
+  }
+
+  50% {
+    top: 48%;
+    right: 15%;
+    transform: rotate(180deg);
+  }
+
+  75% {
+    top: 44%;
+    right: 19%;
+    transform: rotate(270deg);
+  }
+
+  100% {
+    top: 40%;
+    right: 15%;
+    transform: rotate(360deg);
+  }
+}
