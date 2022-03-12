@@ -2,6 +2,7 @@
 .servicios {
   width: 100%;
   height: auto;
+  margin-top: 1.5rem;
   padding: 1rem;
   background: $blanco;
   h2 {
@@ -10,6 +11,16 @@
     font-size: 2.7rem;
     font-weight: 400;
     color: $negro;
+  }
+  p {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 300;
+    color: $negro;
+    a {
+      font-weight: 400;
+      color: $terciario;
+    }
   }
   &__fila {
     display: flex;
@@ -27,15 +38,17 @@
       align-items: center;
       box-shadow: 0.5rem 0.5rem 0.5rem 0rem $negro;
       i {
-        font-size: 1.5rem;
+        font-size: 2rem;
       }
       h3 {
         text-align: center;
+        margin-top: 1rem;
       }
     }
     &__tarjetaServicio:hover {
       background: $primario;
       transition: 0.3s all ease;
+      cursor: pointer;
       i {
         color: $blanco;
         transition: 0.3s all ease;
