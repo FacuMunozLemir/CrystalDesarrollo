@@ -278,81 +278,85 @@
     </section>
 
     <!----------Contacto-------->
-    <section id="contact">
-      <div class="container">
-        <h2>Contáctanos</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <form id="formulario" class="contact-form">
-              <div class="form-group">
-                <input
-                  name="nombre"
-                  type="text"
-                  class="form-control"
-                  placeholder="Tu Nombre"
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  name="numero"
-                  type="number"
-                  class="form-control"
-                  placeholder="Número de teléfono"
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  name="email"
-                  type="email"
-                  class="form-control"
-                  placeholder="E-Mail"
-                />
-              </div>
-              <div class="form-group">
-                <textarea
-                  name="mensaje"
-                  class="form-control"
-                  rows="4"
-                  placeholder="Mensaje"
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">
-                <a>ENVIAR E-MAIL</a>
-              </button>
-            </form>
-            <a href="mailto:crystaldesarrollo@gmail.com" id="trucazo"></a>
+    <section id="contact" class="contacto">
+      <h2>Contactanos</h2>
+      <div class="contacto__fila">
+        <div class="contacto__fila__columnaIzquierda">
+          <form
+            id="formulario"
+            class="contacto__fila__columnaIzquierda__formulario"
+          >
+            <input
+              name="nombre"
+              type="text"
+              class="form-control"
+              placeholder="Tu Nombre"
+              required
+            />
+
+            <input
+              name="numero"
+              type="number"
+              class="form-control"
+              placeholder="Número de teléfono"
+              required
+            />
+
+            <input
+              name="email"
+              type="email"
+              class="form-control"
+              placeholder="E-Mail"
+              required
+            />
+
+            <textarea
+              name="mensaje"
+              class="form-control"
+              rows="4"
+              placeholder="Mensaje"
+              required
+            ></textarea>
+
+            <div class="contacto__fila__columnaIzquierda__formulario__boton">
+              <input type="submit" name="" id="" value="Enviar mensaje" />
+            </div>
+          </form>
+          <a href="mailto:crystaldesarrollo@gmail.com" id="trucazo"></a>
+        </div>
+        <div class="contacto__fila__columnaDerecha">
+          <div class="follow">
+            <label for="">Direccion: </label>
+            <i class="fa-solid fa-location-dot"></i> El Jazmín 35, depto. N°1,
+            Los Perales, S.S. de Jujuy
           </div>
-          <div class="col-md-6 contact-info">
-            <div class="follow">
-              <b>Direccion:</b><i class="fa fa-map-marker"></i> El Jazmín 35,
-              depto. N°1, Los Perales, S.S. de Jujuy
-            </div>
-            <div class="follow">
-              <b>Telefono:</b><i class="fa fa-phone"></i> +54 9 3884734930
-            </div>
-            <div class="follow">
-              <b>E-Mail:</b
-              ><i class="fa fa-envelope-o"></i> crystaldesarrollo@gmail.com
-            </div>
-            <div class="follow">
-              <label><b>Redes sociales:</b></label>
-              <a
-                href="https://www.facebook.com/Crystal-desarrollo-100310441729158"
-                ><i class="fa fa-facebook"></i
-              ></a>
-              <a href="https://www.instagram.com/crystaldesarrollo/"
-                ><i class="fa fa-instagram"></i
-              ></a>
-              <a
-                href="https://api.whatsapp.com/send?phone=+5493884734930&text=¡Hola!, me gustaría consultar por uno de sus servicios"
-                ><i class="fa fa-whatsapp"></i
-              ></a>
-            </div>
+          <div class="follow">
+            <label for="">Tu Teléfono: </label
+            ><i class="fa-solid fa-phone"></i> +54 9 3884734930
+          </div>
+          <div class="follow">
+            <label for="">Tu E-Mail: </label>
+            <i class="fa-regular fa-envelope"></i>
+            crystaldesarrollo@gmail.com
+          </div>
+          <div class="follow">
+            <label>Redes sociales: </label>
+            <a
+              href="https://www.facebook.com/Crystal-desarrollo-100310441729158"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/crystaldesarrollo/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://api.whatsapp.com/send?phone=+5493884734930&text=¡Hola!, me gustaría consultar por uno de sus servicios"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
           </div>
         </div>
       </div>
     </section>
-    -->
+
     <!----------Footer---------->
     <section id="footer">
       <div class="container text-center">

@@ -1,0 +1,100 @@
+@import "0_colores";
+.contacto {
+  width: 100%;
+  margin: 1.5rem 0rem;
+  padding: 1rem;
+  background: $blanco;
+  h2 {
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: 400;
+    margin: 1rem 0rem;
+    color: $negro;
+  }
+  &__fila {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__columnaIzquierda {
+      width: 100%;
+      &__formulario {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        input {
+          line-height: 1.6rem;
+          margin-top: 1rem;
+          background: $blanco;
+          border-style: none;
+          border-bottom: 0.065rem solid $terciario;
+        }
+        input:focus {
+          border-bottom: 0.2rem solid $primario;
+          transition: 0.2s all ease;
+        }
+        textarea {
+          margin-top: 1rem;
+        }
+        &__boton {
+          width: 100%;
+          height: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          input {
+            padding: 0.5rem;
+            border: 0.065rem solid $primario;
+            border-radius: 2rem;
+            color: $secundario;
+          }
+          input:hover {
+            background: $primario;
+            color: $blanco;
+            transition: 0.3s all ease;
+          }
+          input:focus {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+
+    &__columnaDerecha {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      .follow {
+        width: 100%;
+        padding: 0.65rem;
+        margin-top: 1rem;
+        background-color: #fff;
+        label {
+          font-weight: 600;
+        }
+        i {
+          color: $primario;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacto {
+    &__fila {
+      flex-direction: row;
+      justify-content: space-evenly;
+      &__columnaIzquierda {
+        width: 45%;
+      }
+      &__columnaDerecha {
+        width: 45%;
+      }
+    }
+  }
+}

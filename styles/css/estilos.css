@@ -372,3 +372,91 @@
       transform: scale(1.1);
       transition: 0.3s all ease;
       cursor: pointer; }
+
+.contacto {
+  width: 100%;
+  margin: 1.5rem 0rem;
+  padding: 1rem;
+  background: #f8f9fa; }
+  .contacto h2 {
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: 400;
+    margin: 1rem 0rem;
+    color: #252525; }
+  .contacto__fila {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contacto__fila__columnaIzquierda {
+      width: 100%; }
+      .contacto__fila__columnaIzquierda__formulario {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly; }
+        .contacto__fila__columnaIzquierda__formulario input {
+          line-height: 1.6rem;
+          margin-top: 1rem;
+          background: #f8f9fa;
+          border-style: none;
+          border-bottom: 0.065rem solid #a090c5; }
+        .contacto__fila__columnaIzquierda__formulario input:focus {
+          border-bottom: 0.2rem solid #543c8b;
+          transition: 0.2s all ease; }
+        .contacto__fila__columnaIzquierda__formulario textarea {
+          margin-top: 1rem; }
+        .contacto__fila__columnaIzquierda__formulario__boton {
+          width: 100%;
+          height: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .contacto__fila__columnaIzquierda__formulario__boton input {
+            padding: 0.5rem;
+            border: 0.065rem solid #543c8b;
+            border-radius: 2rem;
+            color: #808285; }
+          .contacto__fila__columnaIzquierda__formulario__boton input:hover {
+            background: #543c8b;
+            color: #f8f9fa;
+            transition: 0.3s all ease; }
+          .contacto__fila__columnaIzquierda__formulario__boton input:focus {
+            border-bottom: none; }
+    .contacto__fila__columnaDerecha {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center; }
+      .contacto__fila__columnaDerecha .follow {
+        width: 100%;
+        padding: 0.65rem;
+        margin-top: 1rem;
+        background-color: #fff; }
+        .contacto__fila__columnaDerecha .follow label {
+          font-weight: 600; }
+        .contacto__fila__columnaDerecha .follow i {
+          color: #543c8b;
+          margin-left: 1rem; }
+
+@media screen and (min-width: 768px) {
+  .contacto__fila {
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .contacto__fila__columnaIzquierda {
+      width: 45%; }
+    .contacto__fila__columnaDerecha {
+      width: 45%; } }
+
+#footer {
+  background-color: #252525;
+  margin: 0; }
+  #footer .container p {
+    font-weight: 400;
+    color: #f8f9fa;
+    padding: 2rem;
+    margin: 0; }
+    #footer .container p i {
+      color: #ec3535; }

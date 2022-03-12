@@ -1,0 +1,16 @@
+@import "0_colores";
+#footer {
+  background-color: $negro;
+  margin: 0;
+  .container {
+    p {
+      font-weight: 400;
+      color: $blanco;
+      padding: 2rem;
+      margin: 0;
+      i {
+        color: #ec3535;
+      }
+    }
+  }
+}
