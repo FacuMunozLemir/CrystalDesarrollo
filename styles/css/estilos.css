@@ -568,6 +568,7 @@
       .crystalCare__descripcionFila__columnaD a:hover {
         background: #f8f9fa;
         color: #252525;
+        font-weight: 600;
         transition: 0.3s all ease; }
 
 /*Responsive*/

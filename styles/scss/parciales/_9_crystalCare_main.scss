@@ -126,6 +126,7 @@
       a:hover {
         background: $blanco;
         color: $negro;
+        font-weight: 600;
         transition: 0.3s all ease;
       }
     }
@@ -190,7 +191,6 @@
 
 /**ANIMACIONES*/
 @keyframes textoAnimado {
-  //Inicio 10 15
   0% {
     transform: translateY(-0.5rem);
   }
