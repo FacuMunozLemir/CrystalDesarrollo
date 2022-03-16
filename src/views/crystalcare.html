@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="crystal care, obra social, computadoras, servicio tecnico, descuentos, beneficios, crystal desarrollo"
+    />
+    <meta
+      name="description"
+      content="Crystal Care es la nueva obra social para las computadoras, sumate y disfruta de todos los beneficios que ¡tenemos para vos!"
+    />
+
+    <!--Boostrap Inicio-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!--Boostrap Fin-->
+
+    <!--AOS Inicio-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--AOS Fin-->
+
+    <!--Font Awesome iconos Inicio-->
+    <script
+      src="https://kit.fontawesome.com/2fe6538f6f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Font Awesome iconos Fin-->
+
+    <title>Crystal Care</title>
+    <link rel="shortcut icon" href="../assets/images/fondoblanco.png" />
+    <link rel="stylesheet" href="../../styles/css/estilos.css" />
+  </head>
+  <body>
+    <!--------Navigation Bar-------->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html"
+            ><img
+              src="../assets/images/crystaldesarrolloLetras.png"
+              alt="Crystal Desarrollo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >¿Qué es Crystal Care?</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Planes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Beneficios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Seccion Principal-->
+    <main class="crystalCare">
+      <div class="crystalCare__heroFila">
+        <div class="crystalCare__heroFila__columnaI">
+          <h1>¿Qué es Crystal <span>care</span>?</h1>
+          <h2>Es la nueva obra social para ¡tu computadora!</h2>
+          <p>
+            Que a parte de cuidar de tu PC también tiene varios beneficios para
+            <span>VOS</span>
+          </p>
+        </div>
+        <div class="crystalCare__heroFila__columnaD">
+          <img
+            src="../../src/assets/images/crystalCareCredencial.png"
+            alt="credencial crystal care"
+          />
+          <div class="crystalCare__heroFila__columnaD--texto">
+            <i class="fa-solid fa-arrow-up"></i>
+            <p>¡AH! Y tambien vas a recibir tu E-Card que es así de linda!</p>
+          </div>
+        </div>
+      </div>
+      <div class="crystalCare__descripcionFila">
+        <div class="crystalCare__descripcionFila__columnaI">
+          <img
+            src="../../src/assets/images/laboratorio.png"
+            alt="imagen de investigación"
+          />
+        </div>
+        <div class="crystalCare__descripcionFila__columnaD">
+          <p>
+            Con todo el equipo de Crystal Desarrollo estuvimos investigando
+            cuales son las cosas que acortan la vida util de tu computadora y la
+            hacen mas lenta. Así fue como nació Crystal <span>Care</span>, un
+            programa especialmente diseñado para cuidar al máximo la salud de tu
+            computadora.
+          </p>
+          <h2>Pero eso no era suficiente</h2>
+          <p>
+            Así que decidimos incluir también varios beneficios para
+            <span>VOS</span>, para que puedas disfrutar al 100% esta nueva
+            experiencia.
+          </p>
+          <a href="#">Conocer beneficios</a>
+        </div>
+      </div>
+    </main>
+
+    <!----------Contacto-------->
+    <section id="contact" class="contacto">
+      <h2>Contactanos</h2>
+      <div class="contacto__fila">
+        <div class="contacto__fila__columnaIzquierda">
+          <form
+            id="formulario"
+            class="contacto__fila__columnaIzquierda__formulario"
+          >
+            <input
+              name="nombre"
+              type="text"
+              class="form-control"
+              placeholder="Tu Nombre"
+              required
+            />
+
+            <input
+              name="numero"
+              type="number"
+              class="form-control"
+              placeholder="Número de teléfono"
+              required
+            />
+
+            <input
+              name="email"
+              type="email"
+              class="form-control"
+              placeholder="E-Mail"
+              required
+            />
+
+            <textarea
+              name="mensaje"
+              class="form-control"
+              rows="4"
+              placeholder="Mensaje"
+              required
+            ></textarea>
+
+            <div class="contacto__fila__columnaIzquierda__formulario__boton">
+              <input type="submit" name="" id="" value="Enviar mensaje" />
+            </div>
+          </form>
+          <a href="mailto:crystaldesarrollo@gmail.com" id="trucazo"></a>
+        </div>
+        <div class="contacto__fila__columnaDerecha">
+          <div class="follow">
+            <label for="">Direccion: </label>
+            <a href="https://goo.gl/maps/pDwosscJyQdDeWJ36" target="_blank"
+              ><i class="fa-solid fa-location-dot"></i> El Jazmín 35, depto.
+              N°1, Los Perales, S.S. de Jujuy</a
+            >
+          </div>
+          <div class="follow">
+            <label for="">Tu Teléfono: </label
+            ><i class="fa-solid fa-phone"></i> +54 9 3884734930
+          </div>
+          <div class="follow">
+            <label for="">Tu E-Mail: </label>
+            <i class="fa-regular fa-envelope"></i>
+            crystaldesarrollo@gmail.com
+          </div>
+          <div class="follow">
+            <label>Redes sociales: </label>
+            <a
+              href="https://www.facebook.com/Crystal-desarrollo-100310441729158"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/crystaldesarrollo/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://api.whatsapp.com/send?phone=+5493884734930&text=¡Hola!, me gustaría consultar por uno de sus servicios"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----------Footer---------->
+    <section id="footer">
+      <div class="container text-center">
+        <p>Hecho con <i class="fa fa-heart-o"></i> por Crystal Development</p>
+      </div>
+    </section>
+    <!----------FooterEnd---------->
+
+    <!--Script de formulario de contacto Inicio-->
+    <script>
+      const $formulario = document.querySelector("#formulario");
+      const $btnMailto = document.querySelector("#trucazo");
+
+      $formulario.addEventListener("submit", handleSubmit);
+      function handleSubmit(event) {
+        event.preventDefault();
+        const form = new FormData(this);
+        console.log(form.get("nombre"));
+        $btnMailto.setAttribute(
+          "href",
+          `mailto:crystaldesarrollo@gmail.com?body=Nombre: ${form.get(
+            "nombre"
+          )}, Telefono:${form.get("numero")}, Correo:${form.get(
+            "email"
+          )}, Mensaje:${form.get("mensaje")}`
+        );
+        $btnMailto.click();
+      }
+    </script>
+    <!--Script de formulario de contacto Fin-->
+
+    <!--Script de Animaciones Inicio-->
+    <script>
+      AOS.init();
+    </script>
+    <!--Script de Animaciones Fin-->
+  </body>
+</html>

@@ -1,0 +1,205 @@
+@import "0_colores";
+.crystalCare {
+  width: 100%;
+  height: auto;
+  background-color: $blanco;
+  &__heroFila {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    &__columnaI {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      h1 {
+        margin-top: 4.4rem;
+        font-size: 3rem;
+        color: $primario;
+        span {
+          font-family: "Dancing Script", cursive;
+          color: $secundario;
+        }
+      }
+      h2 {
+        font-size: 2.7rem;
+        font-weight: 600;
+        color: $negro;
+      }
+      p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: $negro;
+        span {
+          font-family: "Dancing Script", cursive;
+          color: $primario;
+        }
+      }
+    }
+    &__columnaD {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 80%;
+        max-width: 30rem;
+      }
+      &--texto {
+        margin: 1.5rem 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        i {
+          margin: 1rem 0rem;
+          color: $primario;
+          animation-name: textoAnimado;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+          animation-duration: 3s;
+          animation-delay: 0s;
+        }
+        p {
+          font-size: 1.2rem;
+          text-align: center;
+          font-family: "Dancing Script", cursive;
+          color: $negro;
+        }
+      }
+    }
+  }
+  &__descripcionFila {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    background: $negro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__columnaI {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 80%;
+        max-width: 25rem;
+      }
+    }
+    &__columnaD {
+      width: 100%;
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h2 {
+        font-size: 2.7rem;
+        font-weight: 600;
+        color: $blanco;
+        text-align: center;
+      }
+      p {
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: $blanco;
+        text-align: center;
+        span {
+          font-family: "Dancing Script", cursive;
+          color: $terciario;
+        }
+      }
+      a {
+        margin: 1rem;
+        padding: 0.7rem;
+        width: auto;
+        border: 0.065rem solid $blanco;
+        border-radius: 2rem;
+        text-decoration: none;
+        color: $blanco;
+      }
+      a:hover {
+        background: $blanco;
+        color: $negro;
+        transition: 0.3s all ease;
+      }
+    }
+  }
+}
+
+/*Responsive*/
+@media screen and (min-width: 768px) {
+  .crystalCare {
+    &__heroFila {
+      margin-top: 5.5rem;
+      flex-direction: row;
+      height: auto;
+      &__columnaI {
+        width: 45%;
+        padding: 0.5rem;
+        justify-content: center;
+        h1 {
+          margin-top: 0;
+        }
+      }
+      &__columnaD {
+        width: 55%;
+        padding: 0.5rem;
+        justify-content: center;
+        img {
+          width: 90%;
+        }
+        &--texto {
+          width: 50%;
+          margin-bottom: 0rem;
+          i {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .crystalCare {
+    &__heroFila {
+      flex-direction: row;
+      height: auto;
+      margin-top: 4.5rem;
+      &__columnaI {
+        width: 50%;
+      }
+      &__columnaD {
+        width: 50%;
+        justify-content: center;
+        img {
+          width: 80%;
+        }
+      }
+    }
+    &__descripcionFila {
+      flex-direction: row;
+    }
+  }
+}
+
+/**ANIMACIONES*/
+@keyframes textoAnimado {
+  //Inicio 10 15
+  0% {
+    transform: translateY(-0.5rem);
+  }
+
+  50% {
+    transform: translateY(0.5rem);
+  }
+
+  100% {
+    transform: translateY(-0.5rem);
+  }
+}

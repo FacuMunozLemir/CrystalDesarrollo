@@ -460,3 +460,160 @@
     margin: 0; }
     #footer .container p i {
       color: #ec3535; }
+
+.crystalCare {
+  width: 100%;
+  height: auto;
+  background-color: #f8f9fa; }
+  .crystalCare__heroFila {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; }
+    .crystalCare__heroFila__columnaI {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      .crystalCare__heroFila__columnaI h1 {
+        margin-top: 4.4rem;
+        font-size: 3rem;
+        color: #543c8b; }
+        .crystalCare__heroFila__columnaI h1 span {
+          font-family: "Dancing Script", cursive;
+          color: #808285; }
+      .crystalCare__heroFila__columnaI h2 {
+        font-size: 2.7rem;
+        font-weight: 600;
+        color: #252525; }
+      .crystalCare__heroFila__columnaI p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #252525; }
+        .crystalCare__heroFila__columnaI p span {
+          font-family: "Dancing Script", cursive;
+          color: #543c8b; }
+    .crystalCare__heroFila__columnaD {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .crystalCare__heroFila__columnaD img {
+        width: 80%;
+        max-width: 30rem; }
+      .crystalCare__heroFila__columnaD--texto {
+        margin: 1.5rem 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .crystalCare__heroFila__columnaD--texto i {
+          margin: 1rem 0rem;
+          color: #543c8b;
+          animation-name: textoAnimado;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+          animation-duration: 3s;
+          animation-delay: 0s; }
+        .crystalCare__heroFila__columnaD--texto p {
+          font-size: 1.2rem;
+          text-align: center;
+          font-family: "Dancing Script", cursive;
+          color: #252525; }
+  .crystalCare__descripcionFila {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    background: #252525;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .crystalCare__descripcionFila__columnaI {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .crystalCare__descripcionFila__columnaI img {
+        width: 80%;
+        max-width: 25rem; }
+    .crystalCare__descripcionFila__columnaD {
+      width: 100%;
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .crystalCare__descripcionFila__columnaD h2 {
+        font-size: 2.7rem;
+        font-weight: 600;
+        color: #f8f9fa;
+        text-align: center; }
+      .crystalCare__descripcionFila__columnaD p {
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: #f8f9fa;
+        text-align: center; }
+        .crystalCare__descripcionFila__columnaD p span {
+          font-family: "Dancing Script", cursive;
+          color: #a090c5; }
+      .crystalCare__descripcionFila__columnaD a {
+        margin: 1rem;
+        padding: 0.7rem;
+        width: auto;
+        border: 0.065rem solid #f8f9fa;
+        border-radius: 2rem;
+        text-decoration: none;
+        color: #f8f9fa; }
+      .crystalCare__descripcionFila__columnaD a:hover {
+        background: #f8f9fa;
+        color: #252525;
+        transition: 0.3s all ease; }
+
+/*Responsive*/
+@media screen and (min-width: 768px) {
+  .crystalCare__heroFila {
+    margin-top: 5.5rem;
+    flex-direction: row;
+    height: auto; }
+    .crystalCare__heroFila__columnaI {
+      width: 45%;
+      padding: 0.5rem;
+      justify-content: center; }
+      .crystalCare__heroFila__columnaI h1 {
+        margin-top: 0; }
+    .crystalCare__heroFila__columnaD {
+      width: 55%;
+      padding: 0.5rem;
+      justify-content: center; }
+      .crystalCare__heroFila__columnaD img {
+        width: 90%; }
+      .crystalCare__heroFila__columnaD--texto {
+        width: 50%;
+        margin-bottom: 0rem; }
+        .crystalCare__heroFila__columnaD--texto i {
+          font-size: 1.3rem; } }
+
+@media screen and (min-width: 1024px) {
+  .crystalCare__heroFila {
+    flex-direction: row;
+    height: auto;
+    margin-top: 4.5rem; }
+    .crystalCare__heroFila__columnaI {
+      width: 50%; }
+    .crystalCare__heroFila__columnaD {
+      width: 50%;
+      justify-content: center; }
+      .crystalCare__heroFila__columnaD img {
+        width: 80%; }
+  .crystalCare__descripcionFila {
+    flex-direction: row; } }
+
+/**ANIMACIONES*/
+@keyframes textoAnimado {
+  0% {
+    transform: translateY(-0.5rem); }
+  50% {
+    transform: translateY(0.5rem); }
+  100% {
+    transform: translateY(-0.5rem); } }
