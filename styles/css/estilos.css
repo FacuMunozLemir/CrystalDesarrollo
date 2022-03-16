@@ -618,3 +618,78 @@
     transform: translateY(0.5rem); }
   100% {
     transform: translateY(-0.5rem); } }
+
+.planes {
+  height: auto;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  background: #f8f9fa; }
+  .planes h2 {
+    text-align: center;
+    font-size: 2.7rem;
+    color: #252525; }
+  .planes__fila {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    .planes__fila__tarjeta {
+      width: 20rem;
+      height: auto;
+      border: 0.07rem solid #543c8b;
+      border-radius: 2rem;
+      margin: 1rem 0rem;
+      padding: 1rem; }
+      .planes__fila__tarjeta--titulo {
+        border-bottom: 0.07rem solid #543c8b; }
+        .planes__fila__tarjeta--titulo h3 {
+          text-align: center;
+          font-size: 1.3rem;
+          font-weight: 400;
+          color: #252525; }
+          .planes__fila__tarjeta--titulo h3 span {
+            color: #543c8b;
+            font-weight: 600; }
+      .planes__fila__tarjeta--descripcion--icono {
+        display: flex;
+        align-items: center; }
+        .planes__fila__tarjeta--descripcion--icono i {
+          color: #543c8b;
+          margin: 1rem 0rem 0rem 0.5rem; }
+        .planes__fila__tarjeta--descripcion--icono p {
+          margin: 1rem 0rem 0rem 0.5rem;
+          font-size: 1.1rem;
+          font-weight: 400; }
+      .planes__fila__tarjeta--boton {
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+        .planes__fila__tarjeta--boton a {
+          width: auto;
+          margin-top: 1rem;
+          padding: 0.5rem;
+          background-color: #543c8b;
+          color: #f8f9fa;
+          text-decoration: none;
+          border-radius: 0.5rem; }
+        .planes__fila__tarjeta--boton a:hover {
+          background: #f8f9fa;
+          border: 0.07rem solid #543c8b;
+          color: #543c8b;
+          font-weight: 600;
+          transition: 0.3s all ease; }
+  .planes p {
+    font-size: 1.1rem;
+    color: #252525;
+    font-weight: 400;
+    text-align: center;
+    margin: 1rem; }
+    .planes p a {
+      color: #543c8b;
+      font-weight: 600; }
+    .planes p span {
+      font-family: "Dancing Script", cursive;
+      color: #808285;
+      font-size: 1.3rem; }

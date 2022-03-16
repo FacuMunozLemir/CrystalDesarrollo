@@ -1,0 +1,93 @@
+@import "0_colores";
+.planes {
+  height: auto;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  background: $blanco;
+  h2 {
+    text-align: center;
+    font-size: 2.7rem;
+    color: $negro;
+  }
+  &__fila {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    &__tarjeta {
+      width: 20rem;
+      height: auto;
+      border: 0.07rem solid $primario;
+      border-radius: 2rem;
+      margin: 1rem 0rem;
+      padding: 1rem;
+      &--titulo {
+        border-bottom: 0.07rem solid $primario;
+        h3 {
+          text-align: center;
+          font-size: 1.3rem;
+          font-weight: 400;
+          color: $negro;
+          span {
+            color: $primario;
+            font-weight: 600;
+          }
+        }
+      }
+      &--descripcion {
+        &--icono {
+          display: flex;
+          align-items: center;
+          i {
+            color: $primario;
+            margin: 1rem 0rem 0rem 0.5rem;
+          }
+          p {
+            margin: 1rem 0rem 0rem 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 400;
+          }
+        }
+      }
+      &--boton {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        a {
+          width: auto;
+          margin-top: 1rem;
+          padding: 0.5rem;
+          background-color: $primario;
+          color: $blanco;
+          text-decoration: none;
+          border-radius: 0.5rem;
+        }
+        a:hover {
+          background: $blanco;
+          border: 0.07rem solid $primario;
+          color: $primario;
+          font-weight: 600;
+          transition: 0.3s all ease;
+        }
+      }
+    }
+  }
+  p {
+    font-size: 1.1rem;
+    color: $negro;
+    font-weight: 400;
+    text-align: center;
+    margin: 1rem;
+    a {
+      color: $primario;
+      font-weight: 600;
+    }
+    span {
+      font-family: "Dancing Script", cursive;
+      color: $secundario;
+      font-size: 1.3rem;
+    }
+  }
+}
