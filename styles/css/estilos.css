@@ -680,16 +680,16 @@
           color: #543c8b;
           font-weight: 600;
           transition: 0.3s all ease; }
-  .planes p {
+  .planes__planPersonalizado {
     font-size: 1.1rem;
     color: #252525;
     font-weight: 400;
     text-align: center;
     margin: 1rem; }
-    .planes p a {
+    .planes__planPersonalizado a {
       color: #543c8b;
       font-weight: 600; }
-    .planes p span {
+    .planes__planPersonalizado span {
       font-family: "Dancing Script", cursive;
       color: #808285;
       font-size: 1.3rem; }
