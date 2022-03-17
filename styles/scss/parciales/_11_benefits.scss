@@ -1,0 +1,74 @@
+@import "0_colores";
+.beneficios {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  background-image: url("../../src/assets/images/cieloEstrellado.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    font-size: 2.7rem;
+    font-weight: 400;
+    color: $blanco;
+  }
+  &__fila {
+    width: 100%;
+    max-width: 64rem;
+    height: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    &__beneficio {
+      width: 19rem;
+      margin-top: 1rem;
+      display: flex;
+      &__columnaI {
+        width: 20%;
+        padding: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        i {
+          font-size: 1.5rem;
+          color: $blanco;
+        }
+      }
+      &__columnaD {
+        width: 80%;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        &--titulo {
+          height: 20%;
+          h4 {
+            text-align: left;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: $blanco;
+          }
+        }
+        &--descripcion {
+          p {
+            text-align: left;
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: $blanco;
+            span {
+              font-weight: 600;
+              color: $terciario;
+              a {
+                color: $blanco;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

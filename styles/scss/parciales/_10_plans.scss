@@ -16,6 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
     &__tarjeta {
       width: 20rem;
       height: auto;
@@ -87,7 +88,22 @@
     span {
       font-family: "Dancing Script", cursive;
       color: $secundario;
-      font-size: 1.3rem;
+      font-size: 1.8rem;
+    }
+  }
+  &__condiciones {
+    width: 80%;
+    margin-top: 1.5rem;
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+      color: $blanco;
+      text-align: center;
+      span {
+        font-family: "Dancing Script", cursive;
+        color: $terciario;
+        font-size: 1.5rem;
+      }
     }
   }
 }
