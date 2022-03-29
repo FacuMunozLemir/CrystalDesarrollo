@@ -1,0 +1,138 @@
+<!-- <?php
+session_start();
+
+$varsession = $_SESSION['usuario'];
+if($varsession == null || $varsession = ''){
+    echo'<script type="text/javascript">
+    alert("Para Ingresar al panel primero debe Iniciar Sesión");
+    window.location.href="http://192.168.0.107/CRYSTAL/log/login.html";
+    </script>';
+    die();
+}
+  -->
+
+<!DOCTYPE html>
+<html lang="Es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Font Awesome iconos Inicio-->
+    <script
+      src="https://kit.fontawesome.com/2fe6538f6f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Font Awesome iconos Fin-->
+
+    <title>Panel de Ususario</title>
+    <link rel="stylesheet" href="../../../styles/css/estilos.css" />
+    <link rel="shortcut icon" href="../Fotos/fondoblanco.png" />
+  </head>
+  <body>
+    <!--Navegador lateral-->
+    <div class="sidebar">
+      <ul>
+        <!-- <li><a href="#"><i id="menu" class="fa fa-bars"><input type="checkbox"></i></li> -->
+        <li class="imagenTexto">
+          <img
+            src="../../assets/images/fondoblanco.png"
+            alt="logo de Crystal Desarrollo"
+          />
+          <p>Crystal <span>Care</span></p>
+        </li>
+
+        <li class="active opcion">
+          <a href="#">
+            <i class="fa-solid fa-house"></i>
+            <p class="texto">Inicio</p></a
+          >
+        </li>
+
+        <li class="opcion" onclick="location.href='usuario.php'">
+          <a href="#"
+            ><i class="fa-solid fa-user"></i>
+            <p class="texto">Usuario</p></a
+          >
+        </li>
+
+        <li class="opcion" onclick="location.href='planes.php'">
+          <a href="#"
+            ><i class="fa-solid fa-swatchbook"></i>
+            <p class="texto">Planes</p></a
+          >
+        </li>
+
+        <li class="opcion" onclick="location.href='contacto.php'">
+          <a href="#"
+            ><i class="fa-solid fa-map-location-dot"></i>
+            <p class="texto">Contacto</p></a
+          >
+        </li>
+
+        <li class="opcion" onclick="location.href='panelDeUsuarioOpciones.php'">
+          <a href="#"
+            ><i class="fa-solid fa-gear"></i>
+            <p class="texto">Opciones</p></a
+          >
+        </li>
+
+        <li
+          class="cerrarSesion opcion"
+          onclick="location.href='../bdphp/cerrarsesion.php'"
+        >
+          <a href="#"
+            ><i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <p class="texto">Salir</p></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!--Cuerpo Principal-->
+    <div class="main">
+      <div class="title-user">
+        <div class="title-left">
+          <h1>Bienvenido a tu panel de control</h1>
+          <!-- <p><?php echo $_SESSION['usuario'] ?></p> -->
+        </div>
+        <div class="title-right">
+          <img src="imagenes/undrawStartupLife.png" alt="#" />
+        </div>
+      </div>
+      <div class="cards-area">
+        <p>¡Para sumar tu comercio a nuestros auspiciantes hacé click acá!</p>
+        <button
+          onclick="window.location.href='#'"
+          class="btn-registro"
+          id="login"
+        >
+          Sumarme
+        </button>
+      </div>
+      <div class="benefits">
+        <div class="column-shop">
+          <h4>Negocios</h4>
+          <p>Mi cochera & Mi lavadero</p>
+          <p>Super Goyo</p>
+          <p>Quantum Fit GYM</p>
+          <p>Zebra GYM</p>
+        </div>
+        <div class="column-discount">
+          <h4>Beneficios</h4>
+          <p>10% OFF</p>
+          <p>10% OFF</p>
+          <p>10% OFF</p>
+          <p>10% OFF</p>
+        </div>
+        <div class="column-location">
+          <h4>Ubicacion</h4>
+          <p>14 sucursales en todo el centro</p>
+          <p>Juana Manuela Gorriti N°22</p>
+          <p>Ramirez de Velazco N°552</p>
+          <p>Av. Corrientes N°2833</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

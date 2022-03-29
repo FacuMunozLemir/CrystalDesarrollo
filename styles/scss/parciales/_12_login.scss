@@ -1,0 +1,149 @@
+@import "0_colores";
+.login {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    text-align: center;
+    margin: 1.5rem 0rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: $negro;
+  }
+  &__formulario {
+    width: 80%;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 60%;
+      max-width: 22.5rem;
+    }
+    &__form {
+      width: 100%;
+      height: auto;
+      margin: 1.5rem 0rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__inputGroup {
+        margin-top: 1.5rem;
+        width: 100%;
+        max-width: 30rem;
+        position: relative;
+        input {
+          width: 100%;
+          font-size: 1.4rem;
+          line-height: 2rem;
+          border-style: none;
+          border-bottom: 0.075rem solid $terciario;
+        }
+        input:focus {
+          outline: none;
+          border-bottom: 0.15rem solid $primario;
+          transition: 0.2s all ease;
+        }
+      }
+      &--btnLogin {
+        margin-top: 1.5rem;
+        padding: 0.7rem;
+        background-color: $primario;
+        color: $blanco;
+        font-size: 1.3rem;
+        font-weight: 400;
+        border-radius: 0.5rem;
+        border: 0.075rem solid $primario;
+      }
+      &--btnLogin:hover {
+        background: $blanco;
+        color: $primario;
+        font-weight: 600;
+        transition: 0.3s all ease;
+      }
+    }
+  }
+  &__contenedor {
+    width: 80%;
+    max-width: 40rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: $negro;
+      span {
+        font-family: "Dancing Script", cursive;
+        color: $primario;
+        font-size: 1.5rem;
+      }
+    }
+    &--botones {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      &--btnPlanes {
+        width: 10rem;
+        margin: 1.5rem 0.75rem;
+        padding: 0.5rem;
+        font-size: 1.1rem;
+        font-weight: 400;
+        text-align: center;
+        color: $negro;
+        text-decoration: none;
+        border: 0.07rem solid $primario;
+        border-radius: 2rem;
+      }
+
+      &--btnPlanes:hover {
+        background: $primario;
+        color: $blanco;
+        font-weight: 600;
+        transition: 0.2s all ease;
+      }
+
+      &--btnSumarse {
+        width: 10rem;
+        margin: 1.5rem 0.75rem;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-align: center;
+        color: #ffff;
+        text-decoration: none;
+        background: $terciario;
+        border-radius: 2rem;
+      }
+
+      &--btnSumarse:hover {
+        background: $blanco;
+        color: $primario;
+        font-weight: 600;
+        transition: 0.2s all ease;
+        border: 0.07rem solid $primario;
+      }
+    }
+  }
+}
+
+@media screen and(min-width:768px) {
+  .login {
+    &__formulario {
+      flex-direction: row;
+      width: 90%;
+      img {
+        width: 50%;
+      }
+      &__form {
+        width: 50%;
+      }
+    }
+  }
+}
