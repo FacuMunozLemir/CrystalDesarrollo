@@ -1000,7 +1000,9 @@
   .catalogo__principal {
     width: 100%;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    /*Parte de filtrado*/
+    /*Ahora va la parte del catalogo en si*/ }
     .catalogo__principal h2 {
       margin-top: 2rem;
       font-size: 1.5rem;
@@ -1037,9 +1039,57 @@
         text-align: center;
         background: #543c8b;
         color: #f8f9fa;
+        border: none;
         border-radius: 0.3rem; }
       .catalogo__principal__form input:hover {
         border: 0.08rem solid #543c8b;
         background: #f8f9fa;
         color: #543c8b;
         transition: 0.3s all ease; }
+    .catalogo__principal__softwares {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
+      .catalogo__principal__softwares--tarjeta {
+        width: 20rem;
+        padding: 0.7rem;
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #f8f9fa; }
+        .catalogo__principal__softwares--tarjeta h3 {
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: #252525; }
+        .catalogo__principal__softwares--tarjeta p {
+          font-size: 1.2rem;
+          font-weight: 400;
+          color: #252525; }
+        .catalogo__principal__softwares--tarjeta--botones {
+          margin: 1rem 0rem;
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly; }
+          .catalogo__principal__softwares--tarjeta--botones a {
+            text-decoration: none;
+            padding: 0.5rem;
+            border-radius: 0.5rem; }
+          .catalogo__principal__softwares--tarjeta--botones .funciones {
+            border: 0.07rem solid #543c8b;
+            font-size: 1.1rem;
+            color: #543c8b; }
+          .catalogo__principal__softwares--tarjeta--botones .carrito {
+            border: none;
+            background: #543c8b;
+            color: #f8f9fa; }
+
+@media screen and (min-width: 650px) {
+  .catalogo__principal__form {
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .catalogo__principal__form__filtro {
+      width: 35%; }
+  .catalogo__principal .ultimo {
+    margin: 0; } }
