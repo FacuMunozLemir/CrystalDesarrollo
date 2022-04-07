@@ -3,9 +3,10 @@
   width: 100%;
   margin-top: 1.5rem;
   padding: 0.5rem;
-  background-image: url("../../src/assets/images/cieloEstrellado.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: $negro;
+  // background-image: url("../../src/assets/images/cieloEstrellado.jpg");
+  // background-repeat: no-repeat;
+  // background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;

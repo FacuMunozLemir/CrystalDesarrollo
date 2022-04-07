@@ -726,9 +726,7 @@
   width: 100%;
   margin-top: 1.5rem;
   padding: 0.5rem;
-  background-image: url("../../src/assets/images/cieloEstrellado.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #252525;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -1006,7 +1004,8 @@
     .catalogo__principal h2 {
       margin-top: 2rem;
       font-size: 1.5rem;
-      color: #252525; }
+      color: #252525;
+      margin-left: 2%; }
     .catalogo__principal__form {
       width: 100%;
       display: flex;
@@ -1053,22 +1052,27 @@
       justify-content: space-evenly; }
       .catalogo__principal__softwares--tarjeta {
         width: 20rem;
+        height: 20rem;
         padding: 0.7rem;
         margin-top: 1.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: #f8f9fa; }
+        justify-content: space-between;
+        background: #f8f9fa;
+        position: relative; }
         .catalogo__principal__softwares--tarjeta h3 {
           font-size: 1.4rem;
           font-weight: 600;
-          color: #252525; }
+          color: #252525;
+          margin: 0rem; }
         .catalogo__principal__softwares--tarjeta p {
           font-size: 1.2rem;
           font-weight: 400;
           color: #252525; }
         .catalogo__principal__softwares--tarjeta--botones {
           margin: 1rem 0rem;
+          bottom: 1rem;
           width: 100%;
           display: flex;
           justify-content: space-evenly; }
