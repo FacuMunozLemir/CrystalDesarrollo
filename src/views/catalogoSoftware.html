@@ -39,7 +39,7 @@
         <!--Font Awesome iconos Fin-->
 
         <!--Js iconos Inicio-->
-        <!-- <script src="../../JS/catalogo.js"></script> -->
+        
         <!--Js iconos Fin-->
 
         <title>Catálogo de Software</title>
@@ -90,20 +90,21 @@
     <h1>Nuestro catálogo de programas</h1>
     <div class="catalogo__principal">
       <h2>Filtros:</h2>
-      <form action="" method="get" enctype="text/plain" class="catalogo__principal__form">
+      <form  class="catalogo__principal__form" id="contactForm">
         <div class="catalogo__principal__form__filtro">
           <label for="">Sistema operativo</label>
-          <select name="SO">
-            <option value="Ninguno" selected>Seleccione un sistema operativo</option>
-            <option value="Windows">Windows</option>
-            <option value="Android">Android</option>
+          <select id="selectSO">
+            <option value="ninguno" selected disabled>Seleccione un sistema operativo</option>
+            <option value="todos" >Todos</option>
+            <option value="windows">Windows</option>
+            <option value="android">Android</option>
           </select>
         </div>
 
         <div class="catalogo__principal__form__filtro ultimo">
           <label for="">Tipo de función</label>
           <select name="Funcion">
-            <option value="Ninguno" selected>Seleccione una función</option>
+            <option value="todos" selected>Seleccione una función</option>
             <option value="1">Ventas y control de stock (negocio)</option>
             <option value="2">Ventas y control de stock (restaurante)</option>
             <option value="3">Control de clientes (gimnasio)</option>
@@ -111,11 +112,11 @@
           </select>
         </div>
 
-        <input type="submit" value="Filtrar">
+        <input type="button" id="btnFiltro" value="Filtrar">
       </form>  
 
       <div class="catalogo__principal__softwares">
-        <div class="catalogo__principal__softwares--tarjeta">
+        <div class="catalogo__principal__softwares--tarjeta android">
           <h3>Mi cochera - Android</h3>
           <p>Programa para dispositivos Android principalmente pensado para llevar el control de la entrada/salida de los vehículos en una "cochera" o "parking"</p>
           <div class="catalogo__principal__softwares--tarjeta--botones">
@@ -123,7 +124,7 @@
             <a href="#" class="carrito">Agregar al carrito</a>
           </div>
         </div>
-        <div class="catalogo__principal__softwares--tarjeta">
+        <div class="catalogo__principal__softwares--tarjeta android">
           <h3>Mi carnicería - Android</h3>
           <p>Programa para dispositivos Android principalmente pensado para llevar el control de ventas y stock de tu carnicería</p>
           <div class="catalogo__principal__softwares--tarjeta--botones">
@@ -131,7 +132,7 @@
             <a href="#" class="carrito">Agregar al carrito</a>
           </div>
         </div>
-        <div class="catalogo__principal__softwares--tarjeta">
+        <div class="catalogo__principal__softwares--tarjeta android">
           <h3>Mi restaruante - Android</h3>
           <p>Programa para dispositivos Android principalmente pensado para llevar el control de las ventas, mesas y comandas de tu restaurante</p>
           <div class="catalogo__principal__softwares--tarjeta--botones">
@@ -139,7 +140,7 @@
             <a href="#" class="carrito">Agregar al carrito</a>
           </div>
         </div>
-        <div class="catalogo__principal__softwares--tarjeta">
+        <div class="catalogo__principal__softwares--tarjeta windows">
           <h3>Mi consultorio - Windows</h3>
           <p>Programa para computadoras con SO Windows principalmente pensado para llevar el control tus pacientes, con sus fichas medicas, fotos, y mucho más</p>
           <div class="catalogo__principal__softwares--tarjeta--botones">
@@ -147,7 +148,7 @@
             <a href="#" class="carrito">Agregar al carrito</a>
           </div>
         </div>
-        <div class="catalogo__principal__softwares--tarjeta">
+        <div class="catalogo__principal__softwares--tarjeta windows">
           <h3>Mi cochera - Windows</h3>
           <p>Programa para computadoras con SO Windows principalmente pensado para llevar el control de la entrada/salida de los vehículos en una "cochera" o "parking"</p>
           <div class="catalogo__principal__softwares--tarjeta--botones">
@@ -155,7 +156,7 @@
             <a href="#" class="carrito">Agregar al carrito</a>
           </div>
         </div>
-        <div class="catalogo__principal__softwares--tarjeta">
+        <div class="catalogo__principal__softwares--tarjeta windows">
           <h3>Mi restaruante - Windows</h3>
           <p>Programa para computadoras con SO Windows principalmente pensado para llevar el control de las ventas, mesas y comandas de tu restaurante</p>
           <div class="catalogo__principal__softwares--tarjeta--botones">
@@ -164,11 +165,13 @@
           </div>
         </div>
       </div> 
-
-
     </div>
+
+    <section class="catalogo__precios">
+      
+    </section>
   </main>
-  
+
   <!----------Footer---------->
   <section id="footer">
     <div class="container text-center">
@@ -177,5 +180,7 @@
   </section>
   <!----------FooterEnd---------->
 
+
+  <script src="../../JS/catalogo.js"></script>
 </body>
 </html>

@@ -1,92 +1,77 @@
-let seleccionSO = parseInt(
-  prompt(
-    "Ingrese el número dependiendo del sistema que desee comprar \n 1- Para computadora \n 2- Para smartphone"
-  )
-);
+//Declaro mi array de obejtos
+const arrayObjetoProgramas = [
+  {
+    nombre: "Mi Cochera",
+    sistemaOperativo: "windows",
+    categoria1: "ventas y control de stock",
+    precio: 30000,
+  },
+  {
+    nombre: "Mi Consultorio",
+    sistemaOperativo: "windows",
+    categoria1: "ventas y control de stock",
+    precio: 60000,
+  },
+  {
+    nombre: "Mi Restaurante",
+    sistemaOperativo: "windows",
+    categoria1: "ventas y control de stock",
+    precio: 45000,
+  },
+  {
+    nombre: "Mi Cochera",
+    sistemaOperativo: "android",
+    categoria1: "ventas y control de stock",
+    precio: 25000,
+  },
+  {
+    nombre: "Mi Carniceria",
+    sistemaOperativo: "android",
+    categoria1: "control de pacientes",
+    precio: 40000,
+  },
+  {
+    nombre: "Mi Restaruante",
+    sistemaOperativo: "android",
+    categoria1: "ventas y control de stock",
+    precio: 50000,
+  },
+];
 
-if (seleccionSO == 1) {
-  let programa = parseInt(
-    prompt(
-      "Ingrese el número del sistema que desee comprar \n 1- Programa de control de ventas (restaruante) \n 2- Programa de control de alumnos y ventas (Gimnasio) \n 3- Programa medico con control de fichas"
-    )
-  );
-  switch (programa) {
-    case 1:
-      alert(
-        "Usted está por comprar el programa para computadora (SO Windows) para control de ventas (restaruante)"
-      );
-      continuar = prompt("Desea continuar S o N");
-      if (continuar == "S" || continuar == "s") {
-        let costoTotal = costoPrograma(30000);
-        alert("El monto a pagar es de: " + costoTotal + " IVA incluido");
-      }
-      break;
-    case 2:
-      alert(
-        "Usted está por comprar el programa para computadora (SO Windows) para control de alumnos y ventas (Gimnasio)"
-      );
-      continuar = prompt("Desea continuar S o N");
-      if (continuar == "S" || continuar == "s") {
-        let costoTotal = costoPrograma(25000);
-        alert("El monto a pagar es de: $" + costoTotal + " IVA incluido");
-      }
-      break;
-    case 3:
-      alert(
-        "Usted está por comprar el programa medico para computadora (SO Windows) para control de fichas"
-      );
-      continuar = prompt("Desea continuar S o N");
-      if (continuar == "S" || continuar == "s") {
-        let costoTotal = costoPrograma(50000);
-        alert("El monto a pagar es de $:" + costoTotal + " IVA incluido");
-      }
-      break;
-    default:
-      console.log("El numero ingresado no es correcto");
-  }
-} else {
-  let programa = parseInt(
-    prompt(
-      "Ingrese el número del sistema que desee comprar \n 1- Programa de control de vehículos (cochera)\n 2- Programa de ventas y stock (carnicería) \n 3- Programa de control de clientes (gimnasio)"
-    )
-  );
-  switch (programa) {
-    case 1:
-      alert(
-        "Usted está por comprar el programa para smartphones (SO Android) para control de vehículos (cochera)"
-      );
-      continuar = prompt("Desea continuar S o N");
-      if (continuar == "s" || continuar == "S") {
-        let costoTotal = costoPrograma(20000);
-        alert("El monto a pagar es de $" + costoTotal + " IVA incluido");
-      }
-      break;
-    case 2:
-      alert(
-        "Usted está por comprar el programa para smartphones (SO Android) para control ventas  (Carnicería)"
-      );
-      continuar = prompt("Desea continuar S o N");
-      if (continuar == "S" || continuar == "s") {
-        let costoTotal = costoPrograma(40000);
-        alert("El monto a pagar es de $" + costoTotal + " IVA incluido");
-      }
-      break;
-    case 3:
-      alert(
-        "Usted está por comprar el programa para smartphones (SO Android) para control de clientes (gimnasio)"
-      );
-      continuar = prompt("Desea continuar S o N");
-      if (continuar == "s" || continuar == "S") {
-        let costoTotal = costoPrograma(17000);
-        alert("El monto a pagar es de $" + costoTotal + " IVA incluido");
-      }
-      break;
-    default:
-      console.log("El numero ingresado no es correcto" + " IVA incluido");
-  }
-}
+document.querySelector("#btnFiltro").onclick = fnFiltro;
 
-function costoPrograma(valor) {
-  let costoTotal = valor * 1.21;
-  return costoTotal;
+//Sección Funciones
+// ! Funcion filtro de SO
+function fnFiltro() {
+  let idSO = document.getElementById("selectSO");
+  let SO = idSO.options[idSO.selectedIndex].value;
+
+  if (SO == "windows") {
+    [].forEach.call(document.querySelectorAll(".android"), function (el) {
+      el.style.visibility = "hidden";
+      el.style.position = "absolute";
+    });
+    [].forEach.call(document.querySelectorAll(".windows"), function (el) {
+      el.style.visibility = "visible";
+      el.style.position = "relative";
+    });
+  } else if (SO == "android") {
+    [].forEach.call(document.querySelectorAll(".windows"), function (el) {
+      el.style.visibility = "hidden";
+      el.style.position = "absolute";
+    });
+    [].forEach.call(document.querySelectorAll(".android"), function (el) {
+      el.style.visibility = "visible";
+      el.style.position = "relative";
+    });
+  } else {
+    [].forEach.call(document.querySelectorAll(".android"), function (el) {
+      el.style.visibility = "visible";
+      el.style.position = "relative";
+    });
+    [].forEach.call(document.querySelectorAll(".windows"), function (el) {
+      el.style.visibility = "visible";
+      el.style.position = "relative";
+    });
+  }
 }
