@@ -312,19 +312,47 @@
       .servicios__fila__tarjetaServicio:hover p {
         color: #f8f9fa;
         transition: 0.3s all ease; }
-  .servicios .verSoftware {
-    margin-top: 1rem;
-    padding: 0.75rem;
-    border: 0.07rem solid #543c8b;
-    background-color: #543c8b;
-    border-radius: 2rem;
-    font-weight: 600;
-    color: #f8f9fa;
-    text-decoration: none; }
-  .servicios .verSoftware:hover {
-    background-color: #f8f9fa;
-    color: #543c8b;
-    transition: 0.3s all ease; }
+  .servicios .indexCatalogo__fila {
+    margin: 1.5rem 0rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly; }
+    .servicios .indexCatalogo__fila__columnaI, .servicios .indexCatalogo__fila__columnaD {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between; }
+      .servicios .indexCatalogo__fila__columnaI p, .servicios .indexCatalogo__fila__columnaD p {
+        font-weight: 400; }
+    .servicios .indexCatalogo__fila__columnaI .verSoftware {
+      margin-top: 1rem;
+      padding: 0.75rem;
+      border: 0.07rem solid #543c8b;
+      background-color: #f8f9fa;
+      border-radius: 2rem;
+      font-weight: 600;
+      color: #543c8b;
+      text-decoration: none; }
+    .servicios .indexCatalogo__fila__columnaI .verSoftware:hover {
+      background-color: #543c8b;
+      color: #f8f9fa;
+      transition: 0.3s all ease; }
+    .servicios .indexCatalogo__fila__columnaD .sacarTurno {
+      margin-top: 1rem;
+      padding: 0.75rem;
+      border: 0.07rem solid #543c8b;
+      background-color: #543c8b;
+      border-radius: 2rem;
+      font-weight: 600;
+      color: #f8f9fa;
+      text-decoration: none;
+      justify-self: flex-end; }
+    .servicios .indexCatalogo__fila__columnaD .sacarTurno:hover {
+      background-color: #f8f9fa;
+      color: #543c8b;
+      transition: 0.3s all ease; }
 
 .destacados {
   width: 100%;
@@ -1097,3 +1125,56 @@
       width: 35%; }
   .catalogo__principal .ultimo {
     margin: 0; } }
+
+.catalogo__precios {
+  margin: 1.5rem 0rem;
+  padding: 0.5rem;
+  width: 100%;
+  height: auto;
+  background: #252525; }
+  .catalogo__precios h2 {
+    text-align: center;
+    font-size: 2.7rem;
+    font-weight: 400;
+    color: #f8f9fa; }
+  .catalogo__precios__fila {
+    margin: 1.5rem 0rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    .catalogo__precios__fila__columnaI {
+      width: 95%;
+      display: flex;
+      justify-content: center; }
+      .catalogo__precios__fila__columnaI img {
+        width: 80%; }
+    .catalogo__precios__fila__columnaD {
+      width: 95%; }
+      .catalogo__precios__fila__columnaD h3 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 400;
+        color: #f8f9fa; }
+      .catalogo__precios__fila__columnaD p {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #f8f9fa; }
+
+@media screen and (min-width: 768px) {
+  .catalogo__precios__fila {
+    flex-direction: row; }
+    .catalogo__precios__fila__columnaD h3 {
+      color: #a090c5; } }
+
+@media screen and (min-width: 1024px) {
+  .catalogo__precios__fila {
+    flex-direction: row; }
+    .catalogo__precios__fila__columnaD h3 {
+      font-size: 2.2rem;
+      font-weight: 600; }
+    .catalogo__precios__fila__columnaD p {
+      font-size: 1.5rem; } }

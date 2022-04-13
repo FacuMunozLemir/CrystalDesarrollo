@@ -94,9 +94,14 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#catalogo"
+                    <a
+                      class="dropdown-item"
+                      href="src/views/catalogoSoftware.html"
                       >Catálogo de software</a
                     >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Sacar un turno</a>
                   </li>
                 </ul>
               </li>
@@ -241,14 +246,23 @@
           </p>
         </div>
       </div>
-      <h2 id="catalogo">Nuestros software</h2>
-      <p>
-        Tambien podes ver nuestro catálogo de software listos para descargar
-        haciendo clik en el boton de abajo
-      </p>
-      <a href="src/views/catalogoSoftware.html" class="verSoftware"
-        >Ver Catálogo</a
-      >
+
+      <h2 id="indexCatalogo">¡Todavía hay MÁS!</h2>
+      <div class="indexCatalogo__fila">
+        <div class="indexCatalogo__fila__columnaI">
+          <p>Podés ver nuestro catálogo de softwares listos para descargar.</p>
+          <a href="src/views/catalogoSoftware.html" class="verSoftware"
+            >Ver Catálogo</a
+          >
+        </div>
+        <div class="indexCatalogo__fila__columnaD">
+          <p>
+            O también podés sacar un turno para realizarle el servicio técnico a
+            tu pc!
+          </p>
+          <a href="" class="sacarTurno">Sacar Turno</a>
+        </div>
+      </div>
     </section>
 
     <!----------Destacados---------->
@@ -265,8 +279,8 @@
           <p>
             María es actualmente el link entre el mundo árabe y el latino o
             hispanohablante. En un corto período de tiempo tomo grandes desafíos
-            como la sucesión de Diego Armando Maradona. Te invito a que conozcas
-            la pagina web que desarrollamos con María haciendo click
+            como la sucesión de <b>Diego Armando Maradona</b>. Te invito a que
+            conozcas la pagina web que desarrollamos con María haciendo click
             <a href="http://www.mariacremaschiadvocate.com" target="_blank"
               >aquí
               <span class="visually-hidden"
@@ -421,33 +435,13 @@
     </section>
     <!----------FooterEnd---------->
 
-    <!--Script de formulario de contacto Inicio-->
-    <script>
-      const $formulario = document.querySelector("#formulario");
-      const $btnMailto = document.querySelector("#trucazo");
+    <!--Sección Scripts-->
 
-      $formulario.addEventListener("submit", handleSubmit);
-      function handleSubmit(event) {
-        event.preventDefault();
-        const form = new FormData(this);
-        console.log(form.get("nombre"));
-        $btnMailto.setAttribute(
-          "href",
-          `mailto:crystaldesarrollo@gmail.com?body=Nombre: ${form.get(
-            "nombre"
-          )}, Telefono:${form.get("numero")}, Correo:${form.get(
-            "email"
-          )}, Mensaje:${form.get("mensaje")}`
-        );
-        $btnMailto.click();
-      }
-    </script>
-    <!--Script de formulario de contacto Fin-->
-
-    <!--Script de Animaciones Inicio-->
+    <!--Formulario-->
+    <script src="JS/catalogo.js"></script>
+    <!--Efecto AOS-->
     <script>
       AOS.init();
     </script>
-    <!--Script de Animaciones Fin-->
   </body>
 </html>

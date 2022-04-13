@@ -74,7 +74,10 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Formas de pago</a>
+              <a class="nav-link" href="#prices">Formas de pago</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacto</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Carrito<i class="fa-solid fa-cart-shopping"></i></a>
@@ -166,11 +169,104 @@
         </div>
       </div> 
     </div>
-
-    <section class="catalogo__precios">
-      
-    </section>
   </main>
+
+  <section class="catalogo__precios" id="prices">
+    <h2>Obtené tu software ¡hoy!</h2>
+    <div class="catalogo__precios__fila">
+      <div class="catalogo__precios__fila__columnaI">
+        <img src="../assets/images/heroe.png" alt="imagen de héroe">
+      </div>
+      <div class="catalogo__precios__fila__columnaD">
+        <h3>Te tenemos cubierto</h3>
+        <p>Introdujimos una nueva forma de pago para que puedas tener tu propia herramienta de trabajo. Ahora podes tener el programa perfecto para tu negocio abonando una ¡suscripción mensual!, tal y como hacés con Netflix® o Spotify®</p>
+      </div>
+    </div>
+
+  </section>
+
+    <!----------Contacto-------->
+    <section id="contact" class="contacto">
+      <h2>Contactanos</h2>
+      <div class="contacto__fila">
+        <div class="contacto__fila__columnaIzquierda">
+          <form
+            id="formulario"
+            class="contacto__fila__columnaIzquierda__formulario"
+          >
+            <input
+              name="nombre"
+              type="text"
+              class="form-control"
+              placeholder="Tu Nombre"
+              required
+            />
+
+            <input
+              name="numero"
+              type="number"
+              class="form-control"
+              placeholder="Número de teléfono"
+              required
+            />
+
+            <input
+              name="email"
+              type="email"
+              class="form-control"
+              placeholder="E-Mail"
+              required
+            />
+
+            <textarea
+              name="mensaje"
+              class="form-control"
+              rows="4"
+              placeholder="Mensaje"
+              required
+            ></textarea>
+
+            <div class="contacto__fila__columnaIzquierda__formulario__boton">
+              <input type="submit" name="" id="" value="Enviar mensaje" />
+            </div>
+          </form>
+          <a href="mailto:crystaldesarrollo@gmail.com" id="trucazo"></a>
+        </div>
+        <div class="contacto__fila__columnaDerecha">
+          <div class="follow">
+            <label for="">Direccion: </label>
+            <a href="https://goo.gl/maps/pDwosscJyQdDeWJ36" target="_blank"
+              ><i class="fa-solid fa-location-dot"></i> El Jazmín 35, depto.
+              N°1, Los Perales, S.S. de Jujuy</a
+            >
+          </div>
+          <div class="follow">
+            <label for="">Tu Teléfono: </label
+            ><i class="fa-solid fa-phone"></i> +54 9 3884804401
+          </div>
+          <div class="follow">
+            <label for="">Tu E-Mail: </label>
+            <i class="fa-regular fa-envelope"></i>
+            crystaldesarrollo@gmail.com
+          </div>
+          <div class="follow">
+            <label>Redes sociales: </label>
+            <a
+              href="https://www.facebook.com/Crystal-desarrollo-100310441729158"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/crystaldesarrollo/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://api.whatsapp.com/send?phone=+5493884804401&text=¡Hola!, me gustaría consultar por uno de sus servicios"
+              target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
   <!----------Footer---------->
   <section id="footer">

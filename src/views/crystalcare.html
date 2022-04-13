@@ -549,33 +549,14 @@
     </section>
     <!----------FooterEnd---------->
 
-    <!--Script de formulario de contacto Inicio-->
-    <script>
-      const $formulario = document.querySelector("#formulario");
-      const $btnMailto = document.querySelector("#trucazo");
+    <!--!Sección Scripts-->
 
-      $formulario.addEventListener("submit", handleSubmit);
-      function handleSubmit(event) {
-        event.preventDefault();
-        const form = new FormData(this);
-        console.log(form.get("nombre"));
-        $btnMailto.setAttribute(
-          "href",
-          `mailto:crystaldesarrollo@gmail.com?body=Nombre: ${form.get(
-            "nombre"
-          )}, Telefono:${form.get("numero")}, Correo:${form.get(
-            "email"
-          )}, Mensaje:${form.get("mensaje")}`
-        );
-        $btnMailto.click();
-      }
-    </script>
-    <!--Script de formulario de contacto Fin-->
+    <!--Formulario-->
+    <script src="../../JS/catalogo.js"></script>
 
-    <!--Script de Animaciones Inicio-->
+    <!--Efecto AOS-->
     <script>
       AOS.init();
     </script>
-    <!--Script de Animaciones Fin-->
   </body>
 </html>

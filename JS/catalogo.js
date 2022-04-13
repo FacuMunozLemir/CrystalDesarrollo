@@ -38,6 +38,27 @@ const arrayObjetoProgramas = [
   },
 ];
 
+//Scrip Formulario de contacto
+const $formulario = document.querySelector("#formulario");
+const $btnMailto = document.querySelector("#trucazo");
+
+$formulario.addEventListener("submit", handleSubmit);
+function handleSubmit(event) {
+  event.preventDefault();
+  const form = new FormData(this);
+  console.log(form.get("nombre"));
+  $btnMailto.setAttribute(
+    "href",
+    `mailto:crystaldesarrollo@gmail.com?body=Nombre: ${form.get(
+      "nombre"
+    )}, Telefono:${form.get("numero")}, Correo:${form.get(
+      "email"
+    )}, Mensaje:${form.get("mensaje")}`
+  );
+  $btnMailto.click();
+}
+
+//Hacemos focus en el boton encargado de filtrar por SO
 document.querySelector("#btnFiltro").onclick = fnFiltro;
 
 //Sección Funciones
