@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif; }
 
+/* NAVEGADOR */
 .navbar {
   opacity: 0.98; }
   .navbar .container-fluid .navbar-brand img {
@@ -417,6 +418,7 @@
       transition: 0.3s all ease;
       cursor: pointer; }
 
+/*FORMULARIO DE CONTACTO*/
 .contacto {
   width: 100%;
   margin: 1.5rem 0rem;

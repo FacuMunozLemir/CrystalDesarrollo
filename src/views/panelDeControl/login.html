@@ -31,9 +31,8 @@
             src="../../assets/images/inicioDeSesion.png"
             alt="imagen de inicio de sesión"
           />
-          <form
-            action="../../../php/validacioncuenta.php"
-            method="POST"
+          <div
+            enctype="text/plain"
             class="login__formulario__form"
           >
                 <div class="login__formulario__form__inputGroup">
@@ -57,13 +56,9 @@
                 </div>
 
                 <!-- <a href="registrousuario.html">¿Todavía no te Registraste?</a> -->
+                <button href="" class="login__formulario__form--btnLogin" id="btnLogIn">Inciar Sesión</button>
 
-                <input
-                    type="submit"
-                    value="Iniciar Sesión"
-                    class="login__formulario__form--btnLogin"
-                />
-            </form>
+            </div>
         </div>
 
         <div class="login__contenedor">
@@ -84,5 +79,7 @@
             >
         </div>
     </main>
+
+    <script src="../../../JS/login.js"></script>
   </body>
 </html>
