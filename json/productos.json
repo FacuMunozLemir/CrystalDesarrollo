@@ -1,0 +1,38 @@
+[
+  {
+    "nombre": "Mi Cochera",
+    "sistemaOperativo": "android",
+    "categoria1": "ventas y control de stock",
+    "precio": 25000
+  },
+  {
+    "nombre": "Mi Carniceria",
+    "sistemaOperativo": "android",
+    "categoria1": "control de pacientes",
+    "precio": 40000
+  },
+  {
+    "nombre": "Mi Restaruante",
+    "sistemaOperativo": "android",
+    "categoria1": "ventas y control de stock",
+    "precio": 50000
+  },
+  {
+    "nombre": "Mi Cochera",
+    "sistemaOperativo": "windows",
+    "categoria1": "ventas y control de stock",
+    "precio": 30000
+  },
+  {
+    "nombre": "Mi Consultorio",
+    "sistemaOperativo": "windows",
+    "categoria1": "ventas y control de stock",
+    "precio": 60000
+  },
+  {
+    "nombre": "Mi Restaurante",
+    "sistemaOperativo": "windows",
+    "categoria1": "ventas y control de stock",
+    "precio": 45000
+  }
+]

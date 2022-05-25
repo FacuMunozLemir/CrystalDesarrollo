@@ -79,8 +79,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contacto</a>
             </li>
+           
             <li class="nav-item">
-              <a class="nav-link" href="#">Carrito<i class="fa-solid fa-cart-shopping"></i></a>
+              <a class="nav-link" href="carrito.html" id="lista-carrito">Carrito<i class="fa-solid fa-cart-shopping"></i></a>
             </li>
           </ul>
         </div>
@@ -104,65 +105,63 @@
           </select>
         </div>
 
-        <!-- <div class="catalogo__principal__form__filtro ultimo">
-          <label for="">Tipo de función</label>
-          <select id="funcionPrograma">
-            <option value="todos" selected>Seleccione una función</option>
-            <option value="ventas">Ventas y control de stock (negocio)</option>
-            <option value="controlFichas">Control de fichas médicas (médico)</option>
-          </select>
-        </div> -->
 
         <input type="button" id="btnFiltro" value="Filtrar">
       </form>  
 
-      <div class="catalogo__principal__softwares">
+      <div class="catalogo__principal__softwares" id="lista-productos">
         <div class="catalogo__principal__softwares--tarjeta android ventas">
           <h3>Mi cochera - Android</h3>
           <p>Programa para dispositivos Android principalmente pensado para llevar el control de la entrada/salida de los vehículos en una "cochera" o "parking"</p>
+          <h4>$<span class="precio">20000</span></h4>
           <div class="catalogo__principal__softwares--tarjeta--botones">
-            <a href="#" class="funciones">Funciones</a>
-            <a href="#" class="carrito" id="btnMiCocheraAndroid">Agregar al carrito</a>
+            <!-- <a href="#" class="funciones" data-id="1">Funciones</a> -->
+            <a href="#" class="carrito" id="btnMiCocheraAndroid" data-id = "1">Agregar al carrito</a>
           </div>
         </div>
         <div class="catalogo__principal__softwares--tarjeta android ventas">
           <h3>Mi carnicería - Android</h3>
           <p>Programa para dispositivos Android principalmente pensado para llevar el control de ventas y stock de tu carnicería</p>
+          <h4>$<span class="precio">25000</span></h4>
           <div class="catalogo__principal__softwares--tarjeta--botones">
-            <a href="#" class="funciones">Funciones</a>
-            <a href="#" class="carrito" id="btnMiCarniceriaAndroid">Agregar al carrito</a>
+            <!-- <a href="#" class="funciones">Funciones</a> -->
+            <a href="#" class="carrito" id="btnMiCarniceriaAndroid" data-id ="2">Agregar al carrito</a>
           </div>
         </div>
         <div class="catalogo__principal__softwares--tarjeta android ventas">
           <h3>Mi restaruante - Android</h3>
           <p>Programa para dispositivos Android principalmente pensado para llevar el control de las ventas, mesas y comandas de tu restaurante</p>
+          <h4>$<span class="precio">23500</span></h4>
           <div class="catalogo__principal__softwares--tarjeta--botones">
-            <a href="#" class="funciones">Funciones</a>
-            <a href="#" class="carrito">Agregar al carrito</a>
+            <!-- <a href="#" class="funciones">Funciones</a> -->
+            <a href="#" class="carrito" id="btnMiRestauranteAndroid" data-id="3">Agregar al carrito</a>
           </div>
         </div>
         <div class="catalogo__principal__softwares--tarjeta windows controlFichas">
           <h3>Mi consultorio - Windows</h3>
           <p>Programa para computadoras con SO Windows principalmente pensado para llevar el control tus pacientes, con sus fichas medicas, fotos, y mucho más</p>
+          <h4>$<span class="precio">50000</span></h4>
           <div class="catalogo__principal__softwares--tarjeta--botones">
-            <a href="#" class="funciones">Funciones</a>
-            <a href="#" class="carrito">Agregar al carrito</a>
+            <!-- <a href="#" class="funciones">Funciones</a> -->
+            <a href="#" class="carrito" id="btnMiConsultorioWindows" data-id="4">Agregar al carrito</a>
           </div>
         </div>
         <div class="catalogo__principal__softwares--tarjeta windows ventas">
           <h3>Mi cochera - Windows</h3>
           <p>Programa para computadoras con SO Windows principalmente pensado para llevar el control de la entrada/salida de los vehículos en una "cochera" o "parking"</p>
+          <h4>$<span class="precio">30000</span></h4>
           <div class="catalogo__principal__softwares--tarjeta--botones">
-            <a href="#" class="funciones">Funciones</a>
-            <a href="#" class="carrito">Agregar al carrito</a>
+            <!-- <a href="#" class="funciones">Funciones</a> -->
+            <a href="#" class="carrito" id="btnMiCocheraWindows" data-id="5">Agregar al carrito</a>
           </div>
         </div>
         <div class="catalogo__principal__softwares--tarjeta windows ventas">
           <h3>Mi restaruante - Windows</h3>
           <p>Programa para computadoras con SO Windows principalmente pensado para llevar el control de las ventas, mesas y comandas de tu restaurante</p>
+          <h4>$<span class="precio">45000</span></h4>
           <div class="catalogo__principal__softwares--tarjeta--botones">
-            <a href="#" class="funciones">Funciones</a>
-            <a href="#" class="carrito">Agregar al carrito</a>
+            <!-- <a href="#" class="funciones">Funciones</a> -->
+            <a href="#" class="carrito" id="btnMiRestauranteWindows" data-id="6">Agregar al carrito</a>
           </div>
         </div>
       </div> 
@@ -275,6 +274,8 @@
   <!----------FooterEnd---------->
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../../JS/carrito.js"></script>
+  <script src="../../JS/pedido.js"></script>
   <script src="../../JS/catalogo.js"></script>
   <script src="../../JS/formularioContacto.js"></script>
 </body>

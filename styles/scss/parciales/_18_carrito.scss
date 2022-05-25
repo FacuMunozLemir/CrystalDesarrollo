@@ -1,0 +1,126 @@
+@import "0_colores";
+
+.carritoDeCompras {
+  margin-top: 5rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+  .cuerpoProductos {
+    margin-top: 2.5rem;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__productoSeleccionado {
+      width: 100%;
+      max-width: 47rem;
+      padding: 0.5rem;
+      background: rgb(216, 216, 216);
+      display: flex;
+      flex-direction: column;
+      border-bottom: 0.07rem solid $negro;
+      h2 {
+        font-size: 1.1rem;
+        color: $negro;
+      }
+      a {
+        margin: 1.5rem 0rem;
+        align-self: flex-end;
+      }
+      i {
+        color: $primario;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  &__total {
+    width: 100%;
+    padding: 1rem;
+    max-width: 47rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__botonesCompra {
+    margin: 2.5rem 0rem;
+    width: 100%;
+    max-width: 47rem;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    a {
+      width: 10rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: $blanco;
+      border-radius: 2rem;
+    }
+    .btnCancelarCompra {
+      background-color: red;
+    }
+    .btnRealizarCompra {
+      background-color: green;
+    }
+  }
+}
+
+.formularioTarjeta {
+  margin: 4rem 0rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  .card-js {
+    width: 70%;
+    max-width: 32rem;
+    height: auto;
+    padding: 1rem;
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    input {
+      margin-top: 1.5rem;
+      width: 80%;
+      font-size: 1.2rem;
+      padding: 0.5rem;
+    }
+    .expira {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      input {
+        width: 45%;
+      }
+    }
+    .pagarAhora {
+      margin-top: 2rem;
+      height: 3rem;
+      width: 80%;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $primario;
+      color: $blanco;
+    }
+  }
+}

@@ -1180,3 +1180,107 @@
       font-weight: 600; }
     .catalogo__precios__fila__columnaD p {
       font-size: 1.5rem; } }
+
+.carritoDeCompras {
+  margin-top: 5rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .carritoDeCompras h1 {
+    font-size: 2.3rem;
+    text-align: center; }
+  .carritoDeCompras .cuerpoProductos {
+    margin-top: 2.5rem;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .carritoDeCompras .cuerpoProductos__productoSeleccionado {
+      width: 100%;
+      max-width: 47rem;
+      padding: 0.5rem;
+      background: #d8d8d8;
+      display: flex;
+      flex-direction: column;
+      border-bottom: 0.07rem solid #252525; }
+      .carritoDeCompras .cuerpoProductos__productoSeleccionado h2 {
+        font-size: 1.1rem;
+        color: #252525; }
+      .carritoDeCompras .cuerpoProductos__productoSeleccionado a {
+        margin: 1.5rem 0rem;
+        align-self: flex-end; }
+      .carritoDeCompras .cuerpoProductos__productoSeleccionado i {
+        color: #543c8b;
+        font-size: 1.1rem; }
+  .carritoDeCompras__total {
+    width: 100%;
+    padding: 1rem;
+    max-width: 47rem;
+    display: flex;
+    justify-content: space-between; }
+  .carritoDeCompras__botonesCompra {
+    margin: 2.5rem 0rem;
+    width: 100%;
+    max-width: 47rem;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly; }
+    .carritoDeCompras__botonesCompra a {
+      width: 10rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #f8f9fa;
+      border-radius: 2rem; }
+    .carritoDeCompras__botonesCompra .btnCancelarCompra {
+      background-color: red; }
+    .carritoDeCompras__botonesCompra .btnRealizarCompra {
+      background-color: green; }
+
+.formularioTarjeta {
+  margin: 4rem 0rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden; }
+  .formularioTarjeta .card-js {
+    width: 70%;
+    max-width: 32rem;
+    height: auto;
+    padding: 1rem;
+    background-color: #d8d8d8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .formularioTarjeta .card-js input {
+      margin-top: 1.5rem;
+      width: 80%;
+      font-size: 1.2rem;
+      padding: 0.5rem; }
+    .formularioTarjeta .card-js .expira {
+      width: 80%;
+      display: flex;
+      justify-content: space-between; }
+      .formularioTarjeta .card-js .expira input {
+        width: 45%; }
+    .formularioTarjeta .card-js .pagarAhora {
+      margin-top: 2rem;
+      height: 3rem;
+      width: 80%;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #543c8b;
+      color: #f8f9fa; }

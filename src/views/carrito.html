@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Boostrap Inicio-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!--Boostrap Fin-->
+
+    <!--Font Awesome iconos Inicio-->
+    <script
+      src="https://kit.fontawesome.com/2fe6538f6f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Font Awesome iconos Fin-->
+
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="../../styles/css/estilos.css" />
+  </head>
+
+  <body>
+    <!--------Navigation Bar-------->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="../assets/images/crystaldesarrolloLetras.png"
+              alt="Crystal Desarrollo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Catalogo de Software</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="carritoDeCompras">
+      <h1>Productos seleccionados</h1>
+
+      <div class="cuerpoProductos">
+        <!-- <div class="cuerpoProductos__productoSeleccionado">
+          <h2>Mi cochera - Android</h2>
+          <h2>1</h2>
+          <h2>$ <span>20.000</span></h2>
+          <a href=""><i class="fa-solid fa-trash"></i></a>
+        </div>
+        <div class="cuerpoProductos__productoSeleccionado">
+          <h2>Mi cochera - Android</h2>
+          <h2>1</h2>
+          <h2>$ <span>20.000</span></h2>
+          <a href="" class="btnEliminar"><i class="fa-solid fa-trash"></i></a>
+        </div> -->
+      </div>
+
+      <div class="carritoDeCompras__total">
+        <h2>TOTAL</h2>
+        <h2>$ <span id="valorFinal"></span></h2>
+      </div>
+
+      <div class="carritoDeCompras__botonesCompra">
+        <a href="#" class="btnCancelarCompra">Cancelar</a>
+        <a href="#" class="btnRealizarCompra">Comprar</a>
+      </div>
+    </main>
+
+    <section class="formularioTarjeta">
+      <h4>Complete los datos de su tarjeta</h4>
+      <div class="card-js">
+        <input
+          class="card-number my-custom-class"
+          name="card-number"
+          type="number"
+          placeholder="Número de la tarjeta"
+          required
+        />
+        <input
+          class="name"
+          id="the-card-name-id"
+          name="card-holders-name"
+          type="text"
+          placeholder="Nombre en la tarjeta"
+          required
+        />
+        <div class="expira">
+          <input
+            class="expiry-month"
+            name="expiry-month"
+            type="number"
+            placeholder="mes: 04"
+            required
+          />
+          <input
+            class="expiry-year"
+            name="expiry-year"
+            type="number"
+            placeholder="año: 29"
+            required
+          />
+        </div>
+
+        <input class="cvc" name="cvc" type="number" placeholder="cvv" />
+
+        <a href="#" class="pagarAhora">Pagar Ahora</a>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../../JS/carrito.js"></script>
+  </body>
+</html>
