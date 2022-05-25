@@ -53,12 +53,17 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto align-items-center">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../../index.html"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">Catalogo de Software</a>
+                <a class="nav-link" href="./catalogoSoftware.html"
+                  >Catalogo de Software</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contacto</a>
@@ -139,7 +144,99 @@
       </div>
     </section>
 
+    <!----------Contacto-------->
+    <section id="contact" class="contacto">
+      <h2>Contactanos</h2>
+      <div class="contacto__fila">
+        <div class="contacto__fila__columnaIzquierda">
+          <form
+            id="formularioContacto"
+            class="contacto__fila__columnaIzquierda__formulario"
+          >
+            <input
+              name="nombre"
+              type="text"
+              class="form-control"
+              placeholder="Tu Nombre"
+              required
+            />
+
+            <input
+              name="numero"
+              type="number"
+              class="form-control"
+              placeholder="Tu número de teléfono"
+              required
+            />
+
+            <input
+              name="email"
+              type="email"
+              class="form-control"
+              placeholder="Tu e-mail"
+              required
+            />
+
+            <textarea
+              name="mensaje"
+              class="form-control"
+              rows="4"
+              placeholder="Mensaje"
+              required
+            ></textarea>
+
+            <div class="contacto__fila__columnaIzquierda__formulario__boton">
+              <input type="submit" name="" id="" value="Enviar mensaje" />
+            </div>
+          </form>
+          <a href="mailto:crystaldesarrollo@gmail.com" id="btnMail"></a>
+        </div>
+        <div class="contacto__fila__columnaDerecha">
+          <div class="follow">
+            <label for="">Direccion: </label>
+            <a href="https://goo.gl/maps/pDwosscJyQdDeWJ36" target="_blank"
+              ><i class="fa-solid fa-location-dot"></i> El Jazmín 35, depto.
+              N°1, Los Perales, S.S. de Jujuy</a
+            >
+          </div>
+          <div class="follow">
+            <label for="">Teléfono: </label
+            ><i class="fa-solid fa-phone"></i> +54 9 3884804401
+          </div>
+          <div class="follow">
+            <label for="">E-Mail: </label>
+            <i class="fa-regular fa-envelope"></i>
+            crystaldesarrollo@gmail.com
+          </div>
+          <div class="follow">
+            <label>Redes sociales: </label>
+            <a
+              href="https://www.facebook.com/Crystal-desarrollo-100310441729158"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/crystaldesarrollo/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://api.whatsapp.com/send?phone=+5493884804401&text=¡Hola!, me gustaría consultar por uno de sus servicios"
+              target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----------Footer---------->
+    <section id="footer">
+      <div class="container text-center">
+        <p>Hecho con <i class="fa fa-heart-o"></i> por Crystal Development</p>
+      </div>
+    </section>
+    <!----------FooterEnd---------->
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../../JS/carrito.js"></script>
+    <script src="../../JS/formularioContacto.js"></script>
   </body>
 </html>
